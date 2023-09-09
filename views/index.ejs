@@ -1,0 +1,35 @@
+<%- include("partials/header.ejs") %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="time">
+             <% let options = {weekday:'long',year:'numeric',month:'long',day:'numeric'};%>
+              <%  let today = new Date();%>
+              <%  let day = today.toLocaleDateString("en-US",options); %> 
+              <h1><%= day  %></h1>
+        </div>
+        <div class="list">
+            <div class="input-box">
+               <%  for(var i=0;i<8;i++){   %>
+                    <input type="text" name="input" class="row" id="row"  value="<%= newItems[i] %>" autocapitalize="off" readonly>
+                    <input type="checkbox" name="" class="checkbox">
+               <%  }   %>
+            </div>
+            <div class="input-box2">
+                <form action="/submit" method="post">
+                    <input type="text" name="inputt" id="text" placeholder="enter your task here" autocomplete="off">
+                    <input type="submit" value="Add" class="button">
+                  </form>
+            </div>
+    </div>
+    </div>
+</body>
+<script src="/index1.js"></script>
+</html>

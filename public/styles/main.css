@@ -1,0 +1,90 @@
+/* Header CSS */
+
+body{
+    background-color: rgba(255, 192, 203, 0.97);
+}
+
+/* Header CSS Ends Here */
+
+/* Main CSS Starts Here */
+
+.container{
+    height: 30rem;
+    width: 30rem;
+    margin: auto;
+}
+.time{
+    border-radius: 4rem;
+    height: 2rem;
+    width: 30rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+}
+.time > h1{
+    font-size: 1.6rem;
+    color: linear-gradient(red,orange,blue,yellow);
+}
+
+.list{
+    background-color: rgb(117, 193, 168);
+    height: 28rem;
+    width: 30rem;
+    margin: auto;
+    margin-top: 0.5rem;
+}
+
+.input-box{
+    margin: auto;
+    height:3rem;
+
+}
+.input-box2{
+    margin-top: 20rem;
+    height:3rem;
+    
+}
+
+.input-box2 form{
+    display: flex;
+    /* flex-direction: row; */
+}
+
+ #text{
+    margin-left: 0.9rem;
+    border-radius:5rem ;
+    height:2.7rem;
+    width: 26rem;
+}
+
+.row{
+    margin-left: 1.5rem;
+    height:2rem;
+    width: 25rem;
+    margin-top: 0.4rem;
+}
+
+.checkbox{
+    height: 1.3rem;
+    width: 1.3rem;
+    /* border-radius: 1rem; */
+}
+
+
+
+.button{
+    width: 5rem;
+    height: 2.7rem;
+    margin-right: 1rem;
+    border-radius: 5rem;
+    /* margin-top: 1rem; */
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: rgb(30, 214, 30);
+}
+
+
